@@ -16,19 +16,22 @@
     // transition-duration: 1s;
     // -webkit-transition-duration: 4s
 }
-// .Ball:active {
-//   width:180%;
-//   // background-color:red;
-// }
-
-.Wall {
-  // text-align: center;
-  // display: flex;
-  // width: 50vw;
-  // width: 100%;
-  margin: 3px;
-  // padding: 20px;
+.Air {
+    // animation-name: spinning;
+    // animation-duration: 7s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
+    border-radius: 10px;
 }
+
+// .Wall {
+//   // text-align: center;
+//   // display: flex;
+//   // width: 50vw;
+//   // width: 100%;
+//   margin: 3px;
+//   // padding: 20px;
+// }
 
 .Wrapper {
   height: 50px;
@@ -51,7 +54,7 @@
 
 .board { 
   // letter-spacing: 5px;
-  background-color: rgba(95, 113, 87, 0.692);
+  background-color: rgb(255, 255, 255);
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -63,10 +66,10 @@
   // padding-right: 3px;
 }
 
-.air {
-  box-sizing: border-box;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: 2px solid rgb(201, 201, 201);
-}
+// .air {
+//   box-sizing: border-box;
+//   display: block;
+//   width: 50px;
+//   height: 50px;
+//   border: 2px solid rgb(201, 201, 201);
+// }

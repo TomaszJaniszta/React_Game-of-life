@@ -1,5 +1,5 @@
 {
-  "name": "js_chess_simple",
+  "name": "js_game_of_life",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
