@@ -77,30 +77,17 @@ function App(){
     };
   };
 
-  let playing = false;
-  let changePlayState = ()=>{playing=!playing};
-  let game;
-
   let gameStart = ()=>{
-    console.log(playing);
-    if(playing !== false){ setTimeout(()=>{
-      game = new Game(board).start();
-      gameStart();
-      document.getElementById("Btn1").disabled = true;
-      document.getElementById("Btn2").disabled = false;
-    }, 1000)};
-  };
-
-  let gameStop = ()=>{
-    playing = false;
-    document.getElementById("Btn2").disabled = true
+      let play = setInterval(() => { 
+        let game = new Game(board).start();
+      }, 1000)
+    document.getElementById("Btn1").disabled = true;
   };
 
   return (
     <>
       <div className={styles.board} >
-        <button id="Btn1" onClick={() => {changePlayState(); gameStart()}} > Start life! </button>
-        <button id="Btn2" disabled={true} onClick={gameStop}> Stop life! </button>
+        <button id="Btn1" disabled={false} onClick={gameStart} > Start life! </button>
         <div><br></br></div>
         {gameBoardDisplay}
       </div>
