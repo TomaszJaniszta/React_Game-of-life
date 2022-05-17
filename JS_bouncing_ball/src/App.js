@@ -6,8 +6,6 @@ import air from './images/air.gif';
 import y from './images/y.jpg'; 
 import styles from './App.module.scss';
 
-let state = 0;
-
 function App() {
   let gameBoardUpdate = () => {
     return (  board.map( indexTable => 
@@ -63,10 +61,9 @@ function App() {
   };
 //move ball, board pole = 
   class Game{
-    constructor(ball, board, state){
+    constructor(ball, board){
       this.ball = ball;
       this.board = board;
-      this.state = state;
       this.startingX = Number(ball.x);
       this.startingY = Number(ball.y);
     }
@@ -100,7 +97,6 @@ function App() {
     }
      
     start(){
-      state = 1; 
       // interval
       const play = setInterval(() => { 
         if (this.board[this.ball.y + this.ball.vector.y][this.ball.x + this.ball.vector.x] === 'Y') {
@@ -110,9 +106,7 @@ function App() {
         } else { this.moveBall() };
 
         setGameBoardDisplay(gameBoardUpdate());
-        // game state: 0 - before start, 1 - active, 2 - finished
         if(this.ball.x === this.startingX && this.ball.y === this.startingY){
-          state = 2; 
           document.getElementById("myBtn").disabled = false;
           clearInterval(play);
           alert("Game done!");
