@@ -1,9 +1,3 @@
-##Clone/copy project##
-
-npm init -y		npm install		npm start  	
-
-http://localhost:3000
-
 # 1.Bouncing ball
 Create bouncy simulator. Get board from ExampleInput.js. X – border, 0 – boards object can travel, 1 – bouncing object. 
 The program is to show how the object would travel and bounce against the walls. 
@@ -24,3 +18,9 @@ After the calculation, all cells change their state at exactly the same time. Th
 There are no players in the game in the literal sense of the word. Human participation comes down to establishing the initial state of cells.
 A dead cell that has exactly 3 living neighbors becomes alive in the next unit of time (is born).
 A living cell with 2 or 3 living neighbors remains alive, and with a different number of neighbors it dies (from "loneliness" or "crowding").
+
+**Clone/copy project**
+**npm init -y**
+**npm install**
+**npm start**
+http://localhost:3000
