@@ -1,3 +1,9 @@
+##Clone/copy project##
+
+npm init -y		npm install		npm start  	
+
+http://localhost:3000
+
 # 1.Bouncing ball
 Create bouncy simulator. Get board from ExampleInput.js. X – border, 0 – boards object can travel, 1 – bouncing object. 
 The program is to show how the object would travel and bounce against the walls. 
