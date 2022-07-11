@@ -20,7 +20,11 @@ A dead cell that has exactly 3 living neighbors becomes alive in the next unit o
 A living cell with 2 or 3 living neighbors remains alive, and with a different number of neighbors it dies (from "loneliness" or "crowding").
 
 **Clone/copy project**
+
 **npm init -y**
+
 **npm install**
+
 **npm start**
+
 http://localhost:3000
