@@ -1,17 +1,4 @@
-# 1.Bouncing ball
-
-Ball bouncy simulator. Get board from ExampleInput.js. X – border, 0 – boards object can travel, 1 – bouncing object. 
-The program is to show how the object would travel and bounce against the walls. 
-"Y" blocks change the direction of the ball to random.
-The program is to end when object comes back to original position. 
-
-# 2.Chess simple
-
-Program is to choose at random one of the chess piece (except the pawn) and place it at the random spot on the board. 
-After placing any piece (except first one) check all present pieces move ranges and see if any can reach other piece. 
-If so Give that pieces position and quit program. FACTORY (with class hierarhy) + SINGLETON pattern
-
-# 3.Game of life
+# Game of life
 
 The game of life - one of the first and most famous examples of a cellular automaton, invented in 1970 by the British mathematician John Conway.
 The game is played on a board divided into square cells. Each cell has eight "neighbors" (the so-called Moore's neighborhood),
@@ -33,3 +20,5 @@ A living cell with 2 or 3 living neighbors remains alive, and with a different n
 **npm start**
 
 http://localhost:3000
+
+https://github.com/TomaszJaniszta/React_Game-of-life/blob/main/Game%20of%20life.png
